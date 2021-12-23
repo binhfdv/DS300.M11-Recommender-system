@@ -6,7 +6,7 @@
 * [2. Repository structure](#2-repository-structure)
 * [3. Data set](#3-data-set)
 * [4. Methodologies](#4-methodologies)
-* [5. Evaluation metrics]()
+* [5. Evaluation metrics](#5-evaluation-metrics)
 
 ## 1. Introduction and motivation
 Lately, it has shown the great explosion of entertainment market, especially in music.
@@ -19,7 +19,17 @@ This leads to a need of developing a convenient, efficient and user-personalized
 
 
 ## 3. Data set
-The data set can be found in folder `data`. There are 2 type of data of `content-based method` and `model-based method`.
+The data set can be found in folder `data`. There are 2 type of data for `content-based method` and `model-based method`.
+
+We employ the [Web API](https://developer.spotify.com/documentation/web-api/) provided by Spotify for collecting the track information from this music platform.
+With the API, we collect a set of `1781` Vietnamese tracks as the database for our proposed recommendation system.
+For the experiments, we continue to collect tracks from `3 Spotify users`.
+
+The attributes of a track are classified into 2 types: `basis information` and `acoustic features`.
+```angular2html
+Editorial features: date_added, artists, track_name, id, uri, track_href, analysis_url.
+Acoustic features: popularity, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, duration_ms, time_signature.
+```
 
 Some statistics of the data:
 ```angular2html
@@ -31,9 +41,11 @@ Content-based method:
 
 ```angular2html
 Model-based method:
-
 ```
-
-    
+<p align="center"><img src="https://raw.githubusercontent.com/githubbinh/DS300.M11-Recommender-system/feature/branch/images/user_data.png" width="1000"></p>
+<p align="center"><i>Fig. 1. Label distribution of each users' data.</i></p>
 
 ## 4. Methodologies
+`Content-base method`: We experiment on the `track_name` feature collected from the users' frequently listened track names and `acoustic features` separately for computing the similarity. 
+
+## 5. Evaluation metrics
