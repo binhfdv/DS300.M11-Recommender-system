@@ -7,12 +7,14 @@
 * [3. Data set](#3-data-set)
 * [4. Methodologies](#4-methodologies)
 * [5. Evaluation metrics](#5-evaluation-metrics)
+* [6. Recommendation system](#6-recommendation-system)
+* [7. Resutls](#7-resutls)
 
 ## 1. Introduction and motivation
 Lately, it has shown the great explosion of entertainment market, especially in music.
 There are over 60,000 tracks are now uploaded to Spotify every day.
 It means Spotify is seeing a new track uploaded to its platform every 1.4 seconds [[1](https://www.musicbusinessworldwide.com/over-60000-tracks-are-now-uploaded-to-spotify-daily-thats-nearly-one-per-second/)].
-Moreover, previous research [[2](https:gosling.psy.utexas.edu/wp-content/uploads/2014/09/JPSP03musicdimensions.pdf)] has figured out the users preferred listening to music to doing any of other activities as watching television, reading books, and watching movies.
+Moreover, previous research [<a href="https://pubmed.ncbi.nlm.nih.gov/12793587/">2</a>]  has figured out the users preferred listening to music to doing any of other activities as watching television, reading books, and watching movies.
 This leads to a need of developing a convenient, efficient and user-personalized recommendation system.
 
 ## 2. Repository structure
@@ -49,3 +51,18 @@ Model-based method:
 `Content-base method`: We experiment on the `track_name` feature collected from the users' frequently listened track names and `acoustic features` separately for computing the similarity. 
 
 ## 5. Evaluation metrics
+`Human evaluation`: The list of top 10 recommended track names is given to the user in order to get the feedback. Then,
+number of accepted track names are aggregated to have the final evaluation score. The metric pipeline are visualized in
+Fig. 2.
+<p align="center"><img src="https://raw.githubusercontent.com/githubbinh/DS300.M11-Recommender-system/feature/branch/images/human_avaluation.png" width="1000"></p>
+<p align="center"><i>Fig. 2. Human evaluation pipeline.</i></p>
+
+`k-fold Cross-validation`: As the data sets for training machine learning models are small in size. We take advantage of
+k-fold Cross-validation in order to train machine learning model.
+
+## 6. Recommendation system
+<p align="center"><img src="https://raw.githubusercontent.com/githubbinh/DS300.M11-Recommender-system/feature/branch/images/recommendation_api.png" width="1000"></p>
+<p align="center"><i>Fig. 3. Web API recommendation system.</i></p>
+
+## 7. Resutls
+
