@@ -19,6 +19,31 @@ This leads to a need of developing a convenient, efficient and user-personalized
 
 ## 2. Repository structure
 
+```angular2html
+DS300.M11 - Recommender system
+│   LICENSE
+|   main.py
+│   readme.md
+│   
+└───data/ 
+│   │   content_based/
+│   |   model_based/
+|   |   private_features/
+|   |   common_fields.txt
+|   |   full_data.csv
+|   |   ...
+└───images/
+|   |   ...
+|   |
+└───slides/
+│   │   ...
+│   |
+└───scr/
+|   |
+|   └── notebook/ - source code here
+│   │   ...
+
+```
 
 ## 3. Data set
 The data set can be found in folder `data`. There are 2 type of data for `content-based method` and `model-based method`.
@@ -65,4 +90,13 @@ k-fold Cross-validation in order to train machine learning model.
 <p align="center"><i>Fig. 3. Web API recommendation system.</i></p>
 
 ## 7. Resutls
+`Content-based method`
+<p align="center"><img src="https://raw.githubusercontent.com/githubbinh/DS300.M11-Recommender-system/feature/branch/images/cb_result.png" width="1000"></p>
+<p align="center"><i>Fig. 4. Human evaluation on 3 types of feature selection.</i></p>
 
+`Model-based method`
+<p align="center"><img src="https://raw.githubusercontent.com/githubbinh/DS300.M11-Recommender-system/feature/branch/images/mb_kfold.png" width="1000"></p>
+<p align="center"><i>Fig. 5. Accuracy and F1-score after 10-folds Cross-validation.</i></p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/githubbinh/DS300.M11-Recommender-system/feature/branch/images/mb_human.png" width="1000"></p>
+<p align="center"><i>Fig. 6. Human evaluation on 4 models.</i></p>
