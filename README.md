@@ -35,7 +35,7 @@ DS300.M11 - Recommender system
 └───images/
 |   |   ...
 |   |
-└───slides/
+└───reports/
 │   │   ...
 │   |
 └───scr/
