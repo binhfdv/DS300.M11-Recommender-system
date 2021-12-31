@@ -35,7 +35,7 @@ DS300.M11 - Recommender system
 └───images/
 |   |   ...
 |   |
-└───reports/
+└───reports/ - link to demo video on Youtube (https://youtu.be/sGAkDtLbkbw)
 │   │   ...
 │   |
 └───scr/
