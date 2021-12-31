@@ -1,6 +1,8 @@
 # DS300.M11 - Recommender system
 ## Vietnamese music recommender system for Spotify users
 
+### Link to demo video on Youtube (https://youtu.be/sGAkDtLbkbw)
+
 ## Table of content
 * [1. Introduction and motivation](#1-Introduction-and-motivation)
 * [2. Repository structure](#2-repository-structure)
@@ -35,7 +37,7 @@ DS300.M11 - Recommender system
 └───images/
 |   |   ...
 |   |
-└───reports/ - link to demo video on Youtube (https://youtu.be/sGAkDtLbkbw)
+└───reports/
 │   │   ...
 │   |
 └───scr/
